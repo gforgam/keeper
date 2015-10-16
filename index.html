@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/themes/default/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <link href="app.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mobile-1.4.5.js" type="text/javascript"></script>
+    </head>
+    <body>
+
+        <section id="home" data-role="page" data-title="Welcome" data-theme="a">
+            <header data-role="header">
+                <!--<img class="img-center" src="images/keeper.png" alt=""/>-->
+                <img class="img-center" src="images/Keeper (1).png" alt=""/>
+            </header>
+            <div data-role="content">
+
+                <form>
+                    <div data-role="content">
+                        <div class="ui-field-contain">
+                            <label><strong>Username</strong></label>
+                            <input type="text" placeholder="Username"  data-clear-btn="true">
+                        </div>
+                        <div class="ui-field-contain">
+                            <label><strong>Password</strong></label>
+                            <input type="password" placeholder="Password"  data-clear-btn="true">
+                        </div>
+                        <div class="ui-field-contain">
+
+                            <div class="ui-grid-b">
+                                <div class="ui-block-a"></div>
+                                <div class="ui-block-b">
+                                    <fieldset data-role="controlgroup" data-type="horizontal">
+                                        <button data-icon="check" type="submit" >Login</button>
+                                    </fieldset>
+                                </div>
+                                <div class="ui-block-c"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+
+                <p class="plink"> 
+                    <label><strong>Not Member?</strong></label>
+                    <a href="#main-menu" data-role="button" data-inline="true" data-icon="grid" data-iconpos="notext">เมนู</a>
+                    <a href="hello.php" rel="external" data-role="button" data-inline="true" data-icon="lock" data-iconpos="notext"></a>
+                </p>
+
+
+            </div>
+            <footer data-role="footer" data-position="fixed"><h6>Egat&COPY;2558 Designed By Surada Lerkpatomsak</h6></footer>
+        </section>
+
+        <section id="main-menu" data-role="page" data-title="Main Menu"> 
+            <header data-role="header">
+                <img class="img-center" src="images/keeper.png" alt=""/>
+                <h1>Main Menu</h1>
+                <a data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-rel="back">Back</a>
+                <a data-role="button" data-inline="true" data-icon="home" data-iconpos="notext" href="#main-menu">home</a>
+            </header>
+            <div data-role="content">
+                <div class="ui-grid-b">
+                    <div class="ui-block-a"></div>
+                    <div class="ui-block-b">
+                        <div data-role="controlgroup"> <!--data-type="horizontal"-->
+                            <a data-role="button" data-icon="tag" href="categories.html" rel="external"><h2>Categories</h2></a>
+                            <a data-role="button" data-icon="info" href="#app-detail"><h2>More Detail</h2></a>
+                            <a data-role="button" data-icon="user" href="#about-us" data-rel="dialog"><h2>About US</h2></a>
+                            <a data-role="button" data-icon="gear" href="setting.html" rel="external"><h2>Setting</h2></a>
+                        </div>
+                    </div>
+                    <div class="ui-block-c"></div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section id="app-detail" data-role="page" data-title="More Detail">
+            <header data-role="header" >
+                <img class="img-center" src="images/keeper.png" alt=""/>
+                <h1>More Detail</h1>
+                <a data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+                <a data-role="button" data-inline="true" data-icon="home" data-iconpos="notext" href="#main-menu"></a>
+                <!--                  <div>
+                                      <a data-role="button" class="ui-btn-right">Data 1</a>
+                                      <a data-role="button" data-rel="back">Data 2</a>
+                                       <a data-role="button" >Data 3</a>
+                                  </div> ถ้าต้องการปุ่มที่ Toolbar โดยไม่เอา Text--> 
+            </header>
+
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true" id="keeper-list">
+                    <li data-icon="carat-r">
+                        <a>A</a>
+                    </li>
+                    <li data-icon="carat-r">
+                        <a>B</a>
+                    </li>
+                </ul>
+
+                <!--                <div data-role="navbar" data-iconps="left" data-grid="d">  a=2 coulumn in 1 row b=3 column in 1 row
+                                 <ul>    ถ้าเกิน 5 จะแบ่งแถวละ 2
+                                        <li><a data-icon="calendar">A</a></li>
+                                        <li><a data-icon="camera">B</a></li>
+                                        <li><a data-icon="camera">B</a></li>
+                                        <li><a data-icon="camera">B</a></li>
+                                        <li><a data-icon="camera">B</a></li>
+                                        
+                                    </ul>
+                                </div>-->
+                <!--<a data-rel="back">Back</a> -->
+            </div>
+            <footer data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>  <a href="index.html#main-menu" rel="external" data-icon="user" style="background-color: lightpink">Main Menu</a></li>
+                        <li> <a href="categories.html" data-icon="user" style="background-color: plum">Categories</a></li>
+                        <li>  <a data-rel="dialog" href="#about-us" class="ui-btn-active" data-icon="user">About Us</a></li>
+                        <li> <a href="setting.html" data-icon="gear" style="background-color: lightgreen">Setting</a></li>
+                    </ul>
+                </div>
+
+
+            </footer>
+        </section>
+
+        <section id="about-us" data-role="dialog" data-title="About Us">
+            <header data-role="header"><!--     data-add-back-btn="true"-->
+                <img class="img-center" src="images/keeper.png" alt=""/>
+                <h1>About Us</h1>
+            </header>
+            <div data-role="content">
+                This application is developed by Miss Surada <a data-rel="popup" href="#pop1" data-transition="flip" style="color: black">G*</a> Lerkpatomsak
+                <!--<h4 class="ui-bar ui-bar-a ui-corner-all">Contact Info</h4>-->     
+                <div>
+                    <br>
+                </div>
+                <div class="ui-corner-all custom-corners">
+                    <div class="ui-bar ui-bar-a"><h4>Contact Info</h4></div>
+                    <div class="ui-body ui-body-a "> 
+                        <center><img src="images/footer_googlemap_new.gif" /></center>
+                        <p style="text-align: center"><strong>keeper@egat.co.th</strong></p>
+                    </div>
+
+                    <!--                     <h4>Contact Info</h4>-->
+
+                </div>
+
+                <p class="plink"><a data-role="button" data-rel="back">Close</a></p>
+                <div data-role="popup" id="pop1">
+                    <p>My Nick Name is GAM :) </p>
+                    <a data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
+                </div>
+            </div>
+        </section>
+        
+        <script type="text/javascript">
+            var serviceURL = "http://10.20.93.77/keeper_services/keeper_list.php";
+            var serviceURL2 = "http://10.20.93.77/keeper_services/getkeeper_detail.php";
+            var keeperList;
+            $("#app-detail").on('pageinit',function (event){
+                //alert("hello");
+//                $.getJSON(serviceURL,function (data){
+//                    $("#keeper-list li").remove();
+//                });
+              
+            });
+             $(document).on('pageshow',"#app-detail",function (){
+                 $.getJSON(serviceURL,function (data){
+                    $("#keeper-list li").remove();
+                    keeperList = data.items;
+                    $.each(keeperList,function (index,keep){
+                    
+                        //alert(keep.province_name);
+                        $("#keeper-list").append("<li><a href='keeper_detail.html?id="+keep.id+"'>"+keep.province_name+"</a></li>");
+                    });
+                   $("#keeper-list").listview('refresh');
+                });
+               });
+               
+                $(document).on('pageshow',"#keeper-detail",function (){
+                     var id=getUrlVars()["id"];
+                     $.getJSON(serviceURL2+"?id="+id,function(data){
+                         var a = data.items;
+                         $.each(a,function (index,val){
+                             $("#sp1").html(val.province_name);
+                          
+                         });
+                       
+                     });
+                    //alert(id);
+                });
+               
+               function getUrlVars() {
+                var vars = [], hash;
+                var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                for (var i = 0; i < hashes.length; i++)
+                {
+                    hash = hashes[i].split('=');
+                    vars.push(hash[0]);
+                    vars[hash[0]] = hash[1];
+                }
+                return vars;
+            }
+        </script>
+
+
+
+
+
+
+    </body>
+</html>
